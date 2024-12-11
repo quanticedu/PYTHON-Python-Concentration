@@ -1,0 +1,10 @@
+cheeses = {
+    "camembert": 4,
+    "stilton": 8.5,
+    "gouda": 0,
+    "limburger": 10,
+    "ricotta": 0,
+    "taleggio": 7,
+    "munster": 5.8,
+    "mozzarella": 0
+    }

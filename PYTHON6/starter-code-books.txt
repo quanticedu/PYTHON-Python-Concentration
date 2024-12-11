@@ -1,0 +1,11 @@
+books = [
+    {"title": "Ye Olde Poetrie Booke",
+     "date": 1621,
+     "pages": 301},
+    {"title": "Victorian Villanelles",
+     "date": 1873,
+     "pages": 47},
+    {"title": "Current Couplets",
+     "date": 2020,
+     "pages": 221}
+]

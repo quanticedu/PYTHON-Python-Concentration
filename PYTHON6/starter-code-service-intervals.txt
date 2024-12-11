@@ -1,0 +1,39 @@
+while True:
+    try:
+        interval = int(input("Interval? "))
+    except ValueError:
+        print("Must be a number.")
+        continue
+
+    if 0 < interval <= 100000 and interval % 10000 == 0:
+        break
+
+    print("Must be greater than zero, less than 100,000, and ")
+    print("a multiple of 10,000.")
+
+if interval == 10000:
+    print("Change Oil")
+    print("Check Alignment")
+elif interval == 20000:
+    print("Change Oil")
+    print("Rotate Tires")
+elif interval == 30000:
+    print("Change Oil")
+elif interval == 40000:
+    print("Change Oil")
+    print("Rotate Tires")
+    print("Inspect Brakes")
+elif interval == 50000:
+    print("Change Oil")
+    print("Check Alignment")
+elif interval == 60000:
+    print("Change Oil")
+    print("Rotate Tires")
+elif interval == 70000:
+    print("Change Oil")
+elif interval == 80000:
+    print("Change Oil")
+    print("Rotate Tires")
+    print("Inspect Brakes")
+elif interval == 90000:
+    print("Change Oil")

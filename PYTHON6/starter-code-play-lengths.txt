@@ -1,0 +1,11 @@
+#lengths of Broadway plays in minutes
+
+play_lengths = {
+    "Hamilton" : 175,
+    "The Book of Mormon" : 150,
+    "West Side Story" : 105,
+    "Oklahoma!" : 165,
+    "Come From Away" : 100,
+    "Aladdin" : 150,
+    "The Sound Inside" : 90
+}

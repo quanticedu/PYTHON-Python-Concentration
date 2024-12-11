@@ -1,0 +1,16 @@
+resp = input("Stinky? ")
+
+if resp == "True":
+    stinks = True
+elif resp == "False":
+    stinks = False
+elif resp == "None":
+    stinks = None
+
+if stinks:
+    print("Eww, gross!")
+elif not stinks:
+    print("Smells good!")
+else:
+    print("Unevaluated.")
+

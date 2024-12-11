@@ -1,0 +1,8 @@
+jokes = [
+    "I'm reading a book about anti-gravity. It's impossible to put down!",
+    "Don't trust atoms. They make up everything!",
+    "Why couldn't the bike stand up by itself? It was two tired.",
+    "I used to hate facial hair, but then it grew on me.",
+    "Dad, did you get a haircut? No, I got them all cut.",
+    "I'm terrified of elevators. I'm going to take steps to avoid them."
+]

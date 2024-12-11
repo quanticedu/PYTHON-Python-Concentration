@@ -1,0 +1,18 @@
+while True:
+    try:
+        resp = input("Enter two numbers:")
+        numbers = resp.split()
+        x = float(numbers[0])
+        y = float(numbers[1])
+        print(x / y)
+        break
+    except IndexError:
+        print("Provide two numbers please.")
+    except ValueError:
+        print("They must be numbers.")
+    except ZeroDivisionError:
+        print("Second number must be non-zero.")
+    except KeyboardInterrupt:
+	print("Exiting...bye!")
+        break
+
