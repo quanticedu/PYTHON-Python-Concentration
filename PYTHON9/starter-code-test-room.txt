@@ -1,0 +1,10 @@
+home = {
+    "Bedroom": Room(4, 3),
+    "Lounge": Room(5, 3),
+    "Kitchen": Room(5, 2),
+    "Bath": Room(4, 2)
+}
+
+area = sum(room.area() for room in home.values())
+print(area)
+

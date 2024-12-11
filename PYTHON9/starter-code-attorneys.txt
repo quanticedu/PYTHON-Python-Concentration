@@ -1,0 +1,79 @@
+import random
+
+class Attorney():
+    """Represents an attorney.
+
+    Attorney instances are used to represent the actions of attorneys in
+    the PythonCourt program.
+
+    Attributes:
+        name: A string representing the attorney's name.
+        role: A string indicating the attorney's role. Valid values are
+          "prosecution" and "defense".
+
+    Methods:
+        introduction: Returns a string introducing this attorney to the court.
+        objection: Returns a string stating an objection.
+    """
+
+    _ROLES = ("prosecution", "defense")
+
+    def __init__(self, name, role):
+        self.name = name
+        self.role = role
+
+    @property
+    def role(self):
+        return self._role
+
+    @role.setter
+    def role(self, value):
+        if value not in Attorney._ROLES:
+            raise AttributeError(
+                f"Invalid role {value}. Must be in {Attorney._ROLES}.")
+
+        self._role = value
+        return
+
+    def __str__(self):
+        return f"{self.name}, {self.role} attorney"
+
+    def introduction(self):
+        """Introduces this attorney to the court.
+
+        Provides a tailored introduction to the court.
+
+        Args: none
+
+        Returns:
+            A string with a tailored introduction.
+        """
+        return f"{self.name} for the {self.role} Your Honor!"
+
+    def objection(self):
+        """Raises an objection.
+
+        Provides a randomly-selected objection from this attorney.
+
+        Args: none
+
+        Returns:
+            A string with an objection.
+        """
+
+        # select someone to object to
+        opponent = random.choice(Attorney._ROLES)
+
+        if opponent == self.role:
+            opponent = Attorney._ROLES[
+                (Attorney._ROLES.index(opponent) + 1) % len(Attorney._ROLES)]
+
+        complaint = random.choice((
+            "is a ninny",
+            "slept through the bar exam",
+            "planted evidence"))
+
+        return f"Objection! The {opponent} {complaint}!"
+
+perry = Attorney("Perry Mason", "defense")
+hamilton = Attorney("Hamilton Burger", "prosecution")

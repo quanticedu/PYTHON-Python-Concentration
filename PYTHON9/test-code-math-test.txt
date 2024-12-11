@@ -1,0 +1,12 @@
+test = MathTest("Subtraction Quiz")
+
+test.questions = {
+    "7 - 4": 3,
+    "15 - 8": 7,
+    "2 - 2": 0,
+    "54 - 42": 12}
+
+test.print_test()
+student_answers = [3, 8, 0, 12]
+print(test.score(student_answers))
+
