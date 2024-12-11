@@ -1,0 +1,6 @@
+prices = {
+    "SUV": 15000,
+    "Coupe": 9000,
+    "Sedan": 22000,
+    "Minivan": 7000,
+}

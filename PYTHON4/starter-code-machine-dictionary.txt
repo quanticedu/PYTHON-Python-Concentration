@@ -1,0 +1,7 @@
+# initialize machine list
+machines = {
+    "Abinator": {"obliques", "abs", "lats"},
+    "Bicep Burner": {"pecs", "arms", "shoulders", "lats"},
+    "Chest Crusher": {"obliques", "abs"},
+    "Delt Destroyer": {"abs", "lats", "shoulders", "pecs"}
+}

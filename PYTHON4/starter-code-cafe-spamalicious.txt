@@ -1,0 +1,21 @@
+# here are the dishes at Cafe Spamalicious
+stir_fry = {"Spam", "pineapple", "red pepper", "onions"}
+rise_and_shine = {"eggs", "onions", "Spam"}
+triple_trifle = {"kiwi", "cherry", "pineapple"}
+
+# here's where your nested data structure should go. use the sets we've
+# defined above to populate your structure
+
+# refactor the code that follows to use your nested data structure instead
+# of individual variables for each menu item
+print(f"Stir-Fry has {len(stir_fry)} ingredients.")
+
+print("Shopping list:")
+for ingr in stir_fry.union(rise_and_shine):
+    print(ingr)
+
+print("Common ingredients:")
+for ingr in stir_fry.intersection(rise_and_shine):
+    print(ingr)
+
+# the code for task 3 goes here

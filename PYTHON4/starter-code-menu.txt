@@ -1,0 +1,8 @@
+stir_fry = set()
+stir_fry.add("Spam")
+stir_fry.add("pineapple")
+stir_fry.add("red pepper")
+stir_fry.add("onions")
+rise_and_shine = {"eggs", "onions", "Spam"}
+ingr_list = ["kiwi", "cherry", "pineapple"]
+triple_trifle = set(ingr_list)

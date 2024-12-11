@@ -1,0 +1,43 @@
+# this code provides the program structure
+# loop for user input
+while True:
+    # print options and get choice
+    print("Menu:")
+    print("A - Add/change machine")
+    print("L - List machines")
+    print("D - Delete machine")
+    print("F - Find machine for set of muscles")
+    print("P - Print all muscles we can work out")
+    print("Q - Quit")
+    choice = input("Choice:").upper()
+
+    # act based on choice
+    if choice == "A":
+        pass
+        # add new machine/change existing
+
+    elif choice == "L":
+        pass
+        # list all machines
+
+    elif choice == "D":
+        pass
+        # delete a machine
+
+    elif choice == "F":
+        pass
+        # find a machine to work out on
+
+    elif choice == "P":
+        pass
+        # print all the muscles for entire gym
+
+    elif choice == "Q":
+        pass
+        # quit the program
+
+    else:
+        # tell the user their choice is invalid
+        print("Invalid choice. Try again")
+
+print("Great workout!")

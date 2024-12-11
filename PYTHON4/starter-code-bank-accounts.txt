@@ -1,0 +1,7 @@
+# starter code
+accounts = {
+    "Quentin": 400,
+    "Vivian": 600,
+    "Rashid": 450,
+    "Misha": 325,
+}
