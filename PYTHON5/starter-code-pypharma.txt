@@ -1,0 +1,4 @@
+from random import randint
+
+meds = ["Pryscol", "Clerdox", "Emeprose", "Rhiatrane", "Hydracetrel"]
+foods = ["Grapefruit", "Cheese", "Kale", "Licorice", "Bananas"]

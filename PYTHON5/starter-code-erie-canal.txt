@@ -1,0 +1,23 @@
+# these are distances (in miles) to major points 
+# along the Erie Canal in New York
+dists = (
+    0.0, 2.7, 26.2,
+    41.4, 63.1, 81.1,
+    91.2, 103.0, 117.0,
+    131.2, 152.8, 163.2,
+    204.1, 223.7, 229.4,
+    249.4, 263.2, 274.1,
+    306.4, 323.5, 338.0,
+    341.5,
+)
+# these are the corresponding major points
+points = (
+    "Troy", "Waterford", "Scotia",
+    "Amsterdam", "Canajoharie", "Little Falls",
+    "Ilion", "Utica", "Rome",
+    "Sylvan Beach", "Brewerton", "Three Rivers Junction",
+    "C-S Canal Junction", "Lyons", "Newark",
+    "Fairport", "Genesee River Junction", "Spencerport",
+    "Medina", "Lockport", "Three Mile Island",
+    "Niagara River",
+)

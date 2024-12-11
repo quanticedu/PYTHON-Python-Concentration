@@ -1,0 +1,6 @@
+tbirds = {"Leader": "Lt Col John Caldwell",
+          "Left Wing": "Maj Trevor Aldridge",
+          "Right Wing": "Capt Michael Brewer",
+          "Slot": "Maj Zane Taylor",
+          "Lead Solo": "Maj Michelle Curran",
+          "Opposing Solo": "Capt Kyle Oliver",}

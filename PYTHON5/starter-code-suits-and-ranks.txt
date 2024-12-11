@@ -1,0 +1,3 @@
+suits = ("Spades", "Hearts", "Clubs", "Diamonds")
+ranks = ("Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
+         "Nine", "Ten", "Jack", "Queen", "King")

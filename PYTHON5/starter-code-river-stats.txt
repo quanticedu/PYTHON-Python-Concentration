@@ -1,0 +1,3 @@
+rivers = ["Macquarie", "Arthur", "Picton", "Tyenna", "North West Bay"]
+distances = [21, 128, 20, 24, 24]
+ratings = [1, 2, 3, 4, 5]
