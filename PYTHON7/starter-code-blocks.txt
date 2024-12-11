@@ -1,0 +1,46 @@
+PI = 3.14
+
+def cube_block_volume(size):
+    """Gets the volume of a cubic block.
+
+    Given a size, returns the volume of a cubic block.
+
+    Args:
+        size: The length of a side as an int or float
+
+    Returns:
+        The volume of the block as an int (if size is an int) or float (if size
+        is a float).
+    """
+    
+    return size ** 3
+
+def cyl_block_volume(size):
+    """Gets the volume of a cylindrical block.
+
+    Given a size, returns the volume of a cylindrical block.
+
+    Args:
+        size: The height and diameter as an int or float
+
+    Returns:
+        The volume of the block as an int (if size is an int) or float (if size
+        is a float).
+    """
+    
+    return PI * (size / 2)**2 * size
+
+def pyr_block_volume(size):
+    """Gets the volume of a pyramid block.
+
+    Given a size, returns the volume of a pyramid block.
+
+    Args:
+        size: The length of a side as an int or float
+
+    Returns:
+        The volume of the block as an int (if size is an int) or float (if size
+        is a float).
+    """
+    
+    return size**3 / 3

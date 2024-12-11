@@ -1,0 +1,28 @@
+def new_inventory(order, inventory):
+    """Returns an updated inventory.
+
+    Adjusts the inventory based on the order. Doesn't
+    check to verify that there is enough stock to
+    satisfy the order.
+
+    Args:
+        order: A tuple with the item as a string and
+          the quantity ordered as an int.
+        inventory: A dict with string items as keys
+          and quantities in stock as ints.
+
+    Returns:
+        A dict in the same format as inventory with
+        updated quantities.
+
+    Raises:
+        KeyError: The item in order isn't a key in
+          inventory.
+        TypeError: order and/or inventory are 
+          incorrectly specified.
+    """
+    item, qty = order
+    new_inv = dict(inventory)
+    new_inv[item] -= qty
+    return new_inv
+

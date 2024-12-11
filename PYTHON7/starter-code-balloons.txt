@@ -1,0 +1,12 @@
+radii = [7, 4, 10]
+balloons = []
+helium = 0.0
+
+def new_balloon(radius):
+    volume = 3.14 * 4 / 3 * radius**3
+    color = "blue" if radius < 5.0 else "red"
+
+for radius in radii:
+
+print(f"Balloons: {balloons}")
+print(f"Total helium needed: {helium}")

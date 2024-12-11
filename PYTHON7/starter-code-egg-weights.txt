@@ -1,0 +1,6 @@
+inventory = {
+    "quail": {"size": 5, "weight": 9, "price": 0.60, "stock": 500},
+    "duck": {"size": 18, "weight": 70, "price": 1.25, "stock": 3000},
+    "goose": {"size": 25, "weight": 140, "price": 3.00, "stock": 2000},
+    "ostrich": {"size": 45, "weight": 1400, "price": 60.00, "stock": 100}
+    }

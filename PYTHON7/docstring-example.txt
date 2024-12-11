@@ -1,0 +1,36 @@
+    """Removes invalid scores.
+
+    Removes scores that aren't in the interval [min_score, max_score]. If
+    min_score > max_score, the returned list will be empty.
+
+    Args:
+        scores: An iterable of numeric data (int or float).
+        min_score: The minimum score (inclusive) to include, as an int 
+            or float.
+        max_score: The maximum score (inclusive) to include, as an int 
+            or float.
+
+    Returns:
+        A new list with valid scores. The scores argument isn't changed.
+
+    Raises:
+        TypeError: The data in scores isn't all numeric and/or min_score
+            or max_score aren't numeric. This is also raised if scores
+            isn't iterable.
+    """
+
+# Notes on this docstring:
+#     The detailed description should include the criteria by which a
+#     score is retained or eliminated.
+#
+#     The Args: and Returns: sections should specify the data type of
+#     all inputs and outputs of the function. If an input or output
+#     can be different types, the docstring should say so. In this
+#     function, scores can be any iterable (list, set, or tuple),
+#     so the docstring should state so. Args is also the place to state
+#     the permissible values for each arg.
+#
+#     You should anticipate what types of exceptions your function might
+#     raise. Users will call your function with all sorts of crazy
+#     inputs, so use your imagination and try to anticipate how your
+#     function might break.
