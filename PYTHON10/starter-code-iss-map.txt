@@ -1,0 +1,53 @@
+# Load a map of the habitable modules of the ISS. The coordinate
+# system indicates (longitudinal, transverse) distance from the Service
+# Module as depicted on Page 43 of the 2015 Reference Guide to the ISS.
+# (https://www.nasa.gov/sites/default/files/atoms/files/np-2015-05-022-jsc-iss-guide-2015-update-111015-508c.pdf)
+# The file should be a JSON object (= Python dict) with entries as:
+#
+#     "Module Name": [x_coord, y_coord]
+#
+# Module names should be in title case.
+# TO DO: code to read from the file
+ISS_MAP = 
+
+def distance(from_module, to_module):
+    """Computes the distance between ISS modules.
+
+    Computes the number of "hops" (going from one module to an adjacent
+    module is one hop) it takes to go from one module to another
+    on the ISS. The number is always positive--the direction of travel isn't
+    significant (i.e. distance(from, to) == distance(to, from)). Hops must be
+    between connected modules. No space walks allowed!
+
+    Args:
+        from_module, to_module: Strings with the names of the modules.
+
+    Returns:
+        The number of modules to traverse as a non-negative integer.
+
+    Raises:
+        KeyError: from_module or to_module are not valid names. Use
+            ISS_MAP to get a list of valid names.
+        TypeError: from_module or to_module are not strings.
+    """
+    # The starting and ending coordinates are in ISS_MAP. If they're
+    # invalid, indexing them in the dictionary raises KeyError.
+    from_coord = ISS_MAP[from_module.title()]
+    to_coord = ISS_MAP[to_module.title()]
+
+    # The distance is the sum of the horizontal and vertical path from
+    # one module to another.
+    return (abs(from_coord[0] - to_coord[0])
+            + abs(from_coord[1] - to_coord[1]))
+
+class Astronaut():
+    """Represents an astronaut.
+
+    Provides attributes and methods for representing an astronaut.
+
+    Attributes:
+        location: A string with the name of the module the astronaut is
+                  currently in.
+    """
+    def __init__(self):
+        self.location = "Service Module"

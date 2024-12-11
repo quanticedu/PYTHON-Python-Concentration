@@ -1,0 +1,32 @@
+def meters_to_feet(meters):
+    return meters / 0.3048
+
+def aus_to_parsecs(aus):
+    # The astronomical unit (au) is the average distance from the Earth to
+    # the Sun.
+    return aus * 0.00000485
+
+def parsecs_to_aus(parsecs):
+    # A star that appears to move one arc-second in the sky over a six-month
+    # period is one parsec away.
+    return parsecs / 0.00000485
+
+def chains_to_yards(chains):
+    return chains * 22
+
+def yards_to_chains(yards):
+    return yards / 22
+
+def meters_to_miles(meters):
+    return meters / 1600
+
+def miles_to_meters(miles):
+    return miles * 1600
+
+def cubits_to_centimeters(cubits):
+    # The cubit varies by culture. This conversion is for the ancient
+    # Roman cubit.
+    return cubits * 44.4
+
+def centimeters_to_cubits(centimeters):
+    return centimeters / 44.4
