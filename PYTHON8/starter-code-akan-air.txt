@@ -1,0 +1,8 @@
+# cities ordered from lowest to highest landing fees
+lndg_fee_data = [
+    ("Lome", 0), ("Accra", 17), ("Porto-Novo", 20), ("Abidjan", 25),
+    ("Lagos", 30), ("Kano", 37), ("Ibadan", 42), ("Dakar", 45),
+    ("Douala", 50), ("Niamey", 51), ("Bamako", 55), ("Banjul", 60),
+    ("Conakry", 65), ("Cotonou", 66), ("Freetown", 75),
+    ("Ouagadougou", 80)] 
+# departure fees are 10 * the length of the city's name

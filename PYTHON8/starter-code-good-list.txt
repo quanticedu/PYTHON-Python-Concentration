@@ -1,0 +1,8 @@
+from random import randint
+kids = ['Yipar', 'Binay', 'Umu', 'Nazli', 'Inal']
+
+goodness = [randint(1, 100) for __ in kids]
+print(goodness)
+
+nice_scores = [score for score in goodness if score > 50]
+print(nice_scores)

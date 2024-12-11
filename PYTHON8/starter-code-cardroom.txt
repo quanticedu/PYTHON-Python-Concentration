@@ -1,0 +1,26 @@
+from random import shuffle
+
+suits = ("Spades", "Hearts", "Clubs", "Diamonds")
+ranks = ("Ace", "Two", "Three", "Four", "Five",
+         "Six", "Seven", "Eight", "Nine", "Ten",
+         "Jack", "Queen", "King")
+
+# replace this with a listcomp
+##deck = []
+##for suit in suits:
+##    for rank in ranks:
+##        deck.append((rank, suit))
+
+shuffle(deck)
+print(deck)
+
+# create a set of all face cards (Jack, Queen, or King) in the first half 
+# of the deck
+
+# create a dictionary of empty player hands
+names = ["Andre", "Hanna", "Vasya", "Marie"]
+
+# modify this code to deal the cards to the players in the dictionary
+for __ in range(5):
+    for hand in hands:
+        hand.append(deck.pop(0))
