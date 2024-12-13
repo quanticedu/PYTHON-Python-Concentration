@@ -1,0 +1,1 @@
+{"Service Module": [0, 0], "Functional Cargo Block": [1, 0], "Node 1": [2, 0], "Node 3": [2, 1], "Quest Airlock": [2, -1], "Destiny Module": [3, 0], "Node 2": [4, 0], "Japanese Experiment Module": [4, 1], "Columbus Orbital Facility": [4, -1]}
